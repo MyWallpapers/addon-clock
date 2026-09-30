@@ -1,0 +1,38 @@
+{
+  "runtime": "canvas-v1",
+  "name": "Hour",
+  "description": "Une horloge numérique, avec un fuseau horaire et une précision explicites.",
+  "version": "0.1.0",
+  "entry": "dist/assets/addon.js",
+  "thumbnail": "assets/thumbnail.png",
+  "deviceSettingsVersion": "1",
+  "ui": {
+    "pointerEvents": "none"
+  },
+  "settings": [
+    {
+      "id": "timezone",
+      "type": "string",
+      "label": "Fuseau IANA (vide : système)",
+      "default": ""
+    },
+    {
+      "id": "locale",
+      "type": "string",
+      "label": "Langue",
+      "default": "fr-FR"
+    },
+    {
+      "id": "seconds",
+      "type": "boolean",
+      "label": "Afficher les secondes",
+      "default": false
+    },
+    {
+      "id": "hour12",
+      "type": "boolean",
+      "label": "Format 12 heures",
+      "default": false
+    }
+  ]
+}
